@@ -1,6 +1,7 @@
 const prevBtn = document.querySelector("#prevBtn");
 const nextBtn = document.querySelector("#nextBtn");
 const imgFrame = document.querySelector("#imgFrame");
+const pageNum = document.querySelector("#pageNum");
 //Get Elements from HTML
 
 prevBtn.addEventListener('click', prevPic);
@@ -13,6 +14,7 @@ function prevPic(){
     imgNum = theNumOfFile;
   }
   imgFrame.src = 'images/' + imgNum + '.jpg'
+  pageNum.innerHTML = imgNum + ' / ' + theNumOfFile;
 };
 
 function nextPic(){
@@ -22,6 +24,7 @@ function nextPic(){
     imgNum = 1;
   }
   imgFrame.src = 'images/' + imgNum + '.jpg'
+  pageNum.innerHTML = imgNum + ' / ' + theNumOfFile;
 };
 //if click the buttons these functions would be executed
 

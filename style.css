@@ -21,3 +21,8 @@
   display: inline-block;
   font-size: 16px;
 }
+
+#pageNum{
+  font-weight: bold;
+  font-size: 5ex;
+}
